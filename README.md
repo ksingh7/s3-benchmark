@@ -1,3 +1,7 @@
+# Notes by Karan
+```
+for i in {1,12,24,48,128} ; do ./s3-benchmark -a S3user1 -s S3user1key -b s3-bench-karan-1m-r1-$i -u http://192.168.170.20:8080 -r us-east-1 -t $i -z 1M -d 60 -l 1 ; sleep 10 ; done
+```
 # Introduction
 
 ## This is a fork version of [wasabi-tech/se-benchmark](https://github.com/wasabi-tech/s3-benchmark), to make it support minio and ceph.
